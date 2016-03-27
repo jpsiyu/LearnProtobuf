@@ -1,0 +1,14 @@
+package ProtoTest;
+
+message TestInfo{
+	
+	required string test = 1;
+	optional int32 num = 2;
+}
+
+message Msg{
+	
+	required int32 id = 1;
+	optional TestInfo msg = 2;
+	optional string str = 3 [default = "Test String"];
+}
